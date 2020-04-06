@@ -8,6 +8,7 @@ module objects {
         private _velocity: Vector2;
         private _isColliding: boolean;
         private _isCentered: boolean;
+        private _isActive : boolean;
         private _type: enums.GameObjectType;
 
 
@@ -73,6 +74,15 @@ module objects {
             if (newState) {
                 this._centerGameObject();
             }
+        }
+        public get isActive() : boolean
+        {
+            return this._isActive;
+        }
+
+        public set isActive(v : boolean)
+        {
+            this._isActive = v;
         }
 
 

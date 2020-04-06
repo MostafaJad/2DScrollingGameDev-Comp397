@@ -44,6 +44,7 @@ var objects;
                 // TODO: make movement smoother with a velocity function
                 this.position = new objects.Vector2(newPositionX, this._verticalPosition);
             }
+            this._bulletFire = new objects.Vector2(this.position.x, this.position.y - this.halfHeight);
         };
         Car.prototype.Start = function () {
             this.name = "car";
@@ -57,8 +58,17 @@ var objects;
         Car.prototype.Update = function () {
             this._move();
             this._checkBounds();
+            if (createjs.Ticker.getTicks() % 10 == 0) {
+                if (config.Game.KEYBOARD_MANAGER.Fire) {
+                    this.Attack();
+                }
+            }
         };
         Car.prototype.Reset = function () {
+        };
+        Car.prototype.Attack = function () {
+            var fire = config.Game.BULLET_MANAGER.GetBullet();
+            fire.position = this._bulletFire;
         };
         return Car;
     }(objects.GameObjects));

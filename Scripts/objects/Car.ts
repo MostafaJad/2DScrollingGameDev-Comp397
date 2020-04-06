@@ -6,6 +6,7 @@ module objects
         private _verticalPosition:number;
         private _engineStart : createjs.AbstractSoundInstance;
         private _horizontalSpeed: number;
+        private _bulletFire : objects.Vector2;
 
 
 
@@ -48,6 +49,8 @@ module objects
                 this.position = new Vector2(newPositionX, this._verticalPosition);
             }
 
+            this._bulletFire = new Vector2(this.position.x, this.position.y - this.halfHeight);
+
 
         }
 
@@ -66,6 +69,14 @@ module objects
         Update(): void {
             this._move();
             this._checkBounds();
+
+            if(createjs.Ticker.getTicks() % 10 ==0)
+            {
+                if(config.Game.KEYBOARD_MANAGER.Fire)
+                {
+                    this.Attack();
+                }
+            }
         }
 
 
@@ -73,6 +84,11 @@ module objects
         }
 
 
+        private Attack(): void {
 
+            let fire = config.Game.BULLET_MANAGER.GetBullet();
+            fire.position = this._bulletFire;
+
+        }
     }
 }

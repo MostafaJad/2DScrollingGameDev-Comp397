@@ -15,6 +15,7 @@ let Game = (function() {
             {id: "placeholder", src: "./Assets/images/placeholder.png"},
             {id: "startButton", src: "./Assets/images/startButton.png"},
             {id: "restartButton", src: "./Assets/images/restartButton.png"},
+            {id: "attack", src: "./Assets/images/attack1.png"},
             {id: "car", src: "./Assets/images/car.png"},
             {id: "road", src: "./Assets/images/road.png"},
             {id: "human", src: "./Assets/images/human.png"},

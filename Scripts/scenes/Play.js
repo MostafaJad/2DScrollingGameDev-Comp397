@@ -39,6 +39,8 @@ var scenes;
             }
             // this._scoreBoard = new managers.ScoreBoard();
             // config.Game.SCORE_BOARD = this._scoreBoard;
+            this._bulletManager = new managers.Bullet();
+            config.Game.BULLET_MANAGER = this._bulletManager;
             this._keyboardManager = new managers.Keyboard();
             config.Game.KEYBOARD_MANAGER = this._keyboardManager;
             this.Main();
@@ -60,6 +62,7 @@ var scenes;
             this.addChild(this._vaccine);
             //
             this.addChild(this._car);
+            this._bulletManager.AddBulletsToScene(this);
             this._corona.forEach(function (corona) {
                 _this.addChild(corona);
             });

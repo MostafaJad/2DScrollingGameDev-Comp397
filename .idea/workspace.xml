@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14b1cab6-08c7-4f13-b4cd-6ba6bb4977b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/config/game.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/config/game.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/config/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/config/game.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/game.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/managers/Collision.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/managers/Collision.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/managers/Collision.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/managers/Collision.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/managers/Collision.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/managers/Collision.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/scenes/Play.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/scenes/Play.js" afterDir="false" />
@@ -98,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585672424351</updated>
       <workItem from="1585672426398" duration="4091000" />
-      <workItem from="1586054528816" duration="26504000" />
+      <workItem from="1586054528816" duration="30768000" />
     </task>
     <servers />
   </component>
@@ -152,6 +149,10 @@
         <option value="$PROJECT_DIR$/Scripts/enums/GameObjectType.js" />
         <option value="$PROJECT_DIR$/Scripts/enums/Keys.js" />
         <option value="$PROJECT_DIR$/Scripts/enums/Keys.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/managers/Bullet.js" />
+        <option value="$PROJECT_DIR$/Scripts/managers/Bullet.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/objects/Bullet.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/objects/Bullet.js" />
       </list>
     </option>
   </component>

@@ -9,6 +9,7 @@ module scenes
 
         private _coronaNumber:number;
         private _corona?: objects.Corona[];
+        private _bulletManager: managers.Bullet;
         private _keyboardManager: managers.Keyboard;
 
         // private _scoreBoard: managers.ScoreBoard;
@@ -48,6 +49,9 @@ module scenes
             // this._scoreBoard = new managers.ScoreBoard();
             // config.Game.SCORE_BOARD = this._scoreBoard;
 
+            this._bulletManager = new managers.Bullet();
+            config.Game.BULLET_MANAGER = this._bulletManager;
+
             this._keyboardManager = new managers.Keyboard();
             config.Game.KEYBOARD_MANAGER = this._keyboardManager;
 
@@ -79,6 +83,7 @@ module scenes
             this.addChild(this._vaccine);
             //
             this.addChild(this._car);
+            this._bulletManager.AddBulletsToScene(this);
             this._corona.forEach(corona => {
                 this.addChild(corona);
             });

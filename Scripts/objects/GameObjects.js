@@ -131,6 +131,16 @@ var objects;
             enumerable: true,
             configurable: true
         });
+        Object.defineProperty(GameObjects.prototype, "isActive", {
+            get: function () {
+                return this._isActive;
+            },
+            set: function (v) {
+                this._isActive = v;
+            },
+            enumerable: true,
+            configurable: true
+        });
         // PRIVATE METHODS
         GameObjects.prototype._computeHalfWidth = function () {
             return this.width * 0.5;
