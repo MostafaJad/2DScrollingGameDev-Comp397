@@ -9,6 +9,7 @@ module scenes
 
         private _coronaNumber:number;
         private _corona?: objects.Corona[];
+        private _keyboardManager: managers.Keyboard;
 
         // private _scoreBoard: managers.ScoreBoard;
 
@@ -41,10 +42,14 @@ module scenes
             for (let index = 0; index < this._coronaNumber; index++)
             {
                 this._corona[index] = new objects.Corona();
+
             }
 
             // this._scoreBoard = new managers.ScoreBoard();
             // config.Game.SCORE_BOARD = this._scoreBoard;
+
+            this._keyboardManager = new managers.Keyboard();
+            config.Game.KEYBOARD_MANAGER = this._keyboardManager;
 
             this.Main();
         }
@@ -55,13 +60,14 @@ module scenes
 
             this._vaccine.Update();
 
+
             this._car.Update();
 
-            // managers.Collision.squaredRadiusCheck(this.c, this.);
+            managers.Collision.squaredRadiusCheck(this._car, this._vaccine);
 
             this._corona.forEach(corona => {
                 corona.Update();
-                // managers.Collision.squaredRadiusCheck(this._car, human);
+                managers.Collision.squaredRadiusCheck(this._car, corona);
             });
 
         }
@@ -84,7 +90,7 @@ module scenes
 
         public Clean():void
         {
-            // this._plane.engineSound.stop();
+            this._car.engineStart.stop();
             this.removeAllChildren();
         }
 

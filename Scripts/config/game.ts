@@ -10,6 +10,7 @@ module config
         public static CORONA_NUM: number = 3;
         public static LIVES:number = 5;
         public static SCORE:number = 0;
+        public static KEYBOARD_MANAGER: managers.Keyboard;
         public static HIGH_SCORE:number = 0;
         public static SCORE_BOARD: managers.ScoreBoard;
     }

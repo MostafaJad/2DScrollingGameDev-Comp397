@@ -21,6 +21,13 @@ var objects;
             _this.Start();
             return _this;
         }
+        Object.defineProperty(Car.prototype, "engineStart", {
+            get: function () {
+                return this._engineStart;
+            },
+            enumerable: true,
+            configurable: true
+        });
         Car.prototype._checkBounds = function () {
             if (this.position.x <= this.halfWidth) {
                 this.position = new objects.Vector2(this.halfWidth, this.position.y);
@@ -30,12 +37,22 @@ var objects;
             }
         };
         Car.prototype._move = function () {
-            var newPositionX = util.Mathf.Lerp(this.position.x, this.stage.mouseX, 0.05);
-            this.position = new objects.Vector2(newPositionX, this._verticalPosition);
+            // let newPositionX = util.Mathf.Lerp(this.position.x, this.stage.mouseX, 0.05);
+            if ((config.Game.KEYBOARD_MANAGER.MoveLeft) || (config.Game.KEYBOARD_MANAGER.MoveRight)) {
+                var newPositionX = (config.Game.KEYBOARD_MANAGER.MoveRight) ?
+                    this.position.x + this._horizontalSpeed : this.position.x - this._horizontalSpeed;
+                // TODO: make movement smoother with a velocity function
+                this.position = new objects.Vector2(newPositionX, this._verticalPosition);
+            }
         };
         Car.prototype.Start = function () {
             this.name = "car";
             this._verticalPosition = 430;
+            this._engineStart = createjs.Sound.play("carEngine");
+            this._engineStart.volume = 0.25;
+            this._horizontalSpeed = 5;
+            this._engineStart.loop = -1;
+            this.position = new objects.Vector2(config.Game.SCREEN_WIDTH * 0.5, this._verticalPosition);
         };
         Car.prototype.Update = function () {
             this._move();

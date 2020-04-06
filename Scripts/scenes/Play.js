@@ -39,16 +39,19 @@ var scenes;
             }
             // this._scoreBoard = new managers.ScoreBoard();
             // config.Game.SCORE_BOARD = this._scoreBoard;
+            this._keyboardManager = new managers.Keyboard();
+            config.Game.KEYBOARD_MANAGER = this._keyboardManager;
             this.Main();
         };
         Play.prototype.Update = function () {
+            var _this = this;
             this._road.Update();
             this._vaccine.Update();
             this._car.Update();
-            // managers.Collision.squaredRadiusCheck(this.c, this.);
+            managers.Collision.squaredRadiusCheck(this._car, this._vaccine);
             this._corona.forEach(function (corona) {
                 corona.Update();
-                // managers.Collision.squaredRadiusCheck(this._car, human);
+                managers.Collision.squaredRadiusCheck(_this._car, corona);
             });
         };
         Play.prototype.Main = function () {
@@ -65,7 +68,7 @@ var scenes;
             // this.addChild(this._scoreBoard.ScoreLabel);
         };
         Play.prototype.Clean = function () {
-            // this._plane.engineSound.stop();
+            this._car.engineStart.stop();
             this.removeAllChildren();
         };
         return Play;

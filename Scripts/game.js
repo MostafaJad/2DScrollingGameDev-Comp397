@@ -16,11 +16,13 @@ var Game = (function () {
         { id: "human", src: "./Assets/images/human.png" },
         { id: "corona", src: "./Assets/images/corona.png" },
         { id: "vaccine", src: "./Assets/images/vaccine.png" },
+        { id: "carEngine", src: "./Assets/sounds/carEngine.ogg" }
     ];
     function Preload() {
         assets = new createjs.LoadQueue();
         config.Game.ASSETS = assets;
         assets.loadManifest(assetManifest);
+        assets.installPlugin(createjs.Sound);
         assets.on("complete", Start);
     }
     function Start() {

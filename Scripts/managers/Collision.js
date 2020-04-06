@@ -12,7 +12,7 @@ var managers;
                     switch (object2.name) {
                         case "car":
                             {
-                                console.log("Collision with Island");
+                                console.log("Collision with Vaccine");
                                 // let yaySound = createjs.Sound.play("yay");
                                 // yaySound.volume = 0.25;
                                 // config.Game.SCORE_BOARD.Score += 100;
@@ -21,9 +21,9 @@ var managers;
                                 }
                             }
                             break;
-                        case "human":
+                        case "corona":
                             {
-                                console.log("Collision with Cloud");
+                                console.log("Collision with Human");
                                 // let thunderSound = createjs.Sound.play("thunder");
                                 // thunderSound.volume = 0.25;
                                 // config.Game.SCORE_BOARD.Lives -= 1;

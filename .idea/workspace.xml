@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14b1cab6-08c7-4f13-b4cd-6ba6bb4977b4" name="Default Changelist" comment="" />
+    <list default="true" id="14b1cab6-08c7-4f13-b4cd-6ba6bb4977b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/config/game.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/config/game.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/config/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/config/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/game.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/managers/Collision.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/managers/Collision.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/managers/Collision.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/managers/Collision.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/managers/Collision.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/managers/Collision.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/scenes/Play.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/scenes/Play.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/scenes/Play.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/scenes/Play.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/scenes/Play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/scenes/Play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +36,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZtxvmuE30wCagYR6zBn2bJcLDs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +51,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Assets/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -33,7 +60,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Scripts/config" />
       <recent name="$PROJECT_DIR$/Assets/images" />
+      <recent name="$PROJECT_DIR$/Assets/sounds" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assets/images" />
@@ -69,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585672424351</updated>
       <workItem from="1585672426398" duration="4091000" />
-      <workItem from="1586054528816" duration="14725000" />
+      <workItem from="1586054528816" duration="26504000" />
     </task>
     <servers />
   </component>
@@ -89,19 +118,27 @@
         <option value="$PROJECT_DIR$/Scripts/scenes/Play.js" />
         <option value="$PROJECT_DIR$/Scripts/scenes/Play.js.map" />
         <option value="$PROJECT_DIR$/Scripts/game.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/objects/Vaccine.js.map" />
         <option value="$PROJECT_DIR$/Scripts/scenes/Start.js" />
         <option value="$PROJECT_DIR$/Scripts/game.js" />
         <option value="$PROJECT_DIR$/Scripts/objects/Car.js" />
         <option value="$PROJECT_DIR$/Scripts/objects/Car.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/objects/Vaccine.js" />
         <option value="$PROJECT_DIR$/Scripts/objects/Road.js" />
         <option value="$PROJECT_DIR$/Scripts/config/game.js.map" />
         <option value="$PROJECT_DIR$/Scripts/objects/Road.js.map" />
-        <option value="$PROJECT_DIR$/Scripts/objects/Human.js.map" />
-        <option value="$PROJECT_DIR$/Scripts/objects/Human.js" />
+        <option value="$PROJECT_DIR$/Scripts/managers/Keyboard.js" />
+        <option value="$PROJECT_DIR$/Scripts/managers/Keyboard.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/config/Settings.js.map" />
         <option value="$PROJECT_DIR$/Scripts/config/game.js" />
+        <option value="$PROJECT_DIR$/Scripts/config/PlayerId.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/config/PlayerId.js" />
         <option value="$PROJECT_DIR$/Scripts/managers/ScoreBoard.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/config/PlayerKeys.js.map" />
         <option value="$PROJECT_DIR$/Scripts/util/Mathf.js" />
         <option value="$PROJECT_DIR$/Scripts/util/Mathf.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/config/PlayerKeys.js" />
+        <option value="$PROJECT_DIR$/Scripts/config/Settings.js" />
         <option value="$PROJECT_DIR$/Scripts/managers/ScoreBoard.js" />
         <option value="$PROJECT_DIR$/Scripts/objects/Vector2.js.map" />
         <option value="$PROJECT_DIR$/Scripts/objects/Button.js" />
@@ -111,12 +148,18 @@
         <option value="$PROJECT_DIR$/Scripts/objects/GameObjects.js.map" />
         <option value="$PROJECT_DIR$/Scripts/objects/Scene.js.map" />
         <option value="$PROJECT_DIR$/Scripts/objects/Vector2.js" />
-        <option value="$PROJECT_DIR$/Scripts/objects/Vaccine.js" />
-        <option value="$PROJECT_DIR$/Scripts/objects/Vaccine.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/enums/GameObjectType.js.map" />
+        <option value="$PROJECT_DIR$/Scripts/enums/GameObjectType.js" />
+        <option value="$PROJECT_DIR$/Scripts/enums/Keys.js" />
+        <option value="$PROJECT_DIR$/Scripts/enums/Keys.js.map" />
       </list>
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="-764" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586126069400">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-764" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586126069400" />
     <state x="-662" y="263" key="#com.intellij.ide.util.MemberChooser" timestamp="1586072072370">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -125,6 +168,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1063" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586071296601" />
+    <state x="-737" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586140348641">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-737" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586140348641" />
     <state width="1419" height="142" key="GridCell.Tab.0.bottom" timestamp="1586054457225">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
