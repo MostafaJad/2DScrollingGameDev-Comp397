@@ -34,7 +34,7 @@ var objects;
         };
         Bullet.prototype.Start = function () {
             this.name = "attack";
-            this._verticalSpeed = 200; // 5 px per frame
+            this._verticalSpeed = 5; // 5 px per frame
             this.velocity = new objects.Vector2(0, -this._verticalSpeed);
             this.Reset();
         };

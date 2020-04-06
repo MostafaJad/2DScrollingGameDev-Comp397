@@ -63,6 +63,7 @@ module scenes
             this._road.Update();
 
             this._vaccine.Update();
+            this._bulletManager.Update();
 
 
             this._car.Update();

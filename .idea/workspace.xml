@@ -3,21 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="14b1cab6-08c7-4f13-b4cd-6ba6bb4977b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/config/game.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/config/game.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/config/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/config/game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/game.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/objects/Car.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Car.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/objects/GameObjects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/GameObjects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/sounds/carEngine.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/sounds/carEngine.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/Bullet.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Bullet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/Bullet.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Bullet.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/Bullet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Bullet.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/objects/Player.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/objects/Player.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/scenes/Play.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/scenes/Play.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/scenes/Play.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/scenes/Play.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/scenes/Play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/scenes/Play.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +50,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assets/sounds" />
       <recent name="$PROJECT_DIR$/Scripts/config" />
       <recent name="$PROJECT_DIR$/Assets/images" />
-      <recent name="$PROJECT_DIR$/Assets/sounds" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assets/images" />
@@ -95,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585672424351</updated>
       <workItem from="1585672426398" duration="4091000" />
-      <workItem from="1586054528816" duration="30768000" />
+      <workItem from="1586054528816" duration="31680000" />
     </task>
     <servers />
   </component>
@@ -157,10 +150,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-764" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586126069400">
+    <state x="-764" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586149014275">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-764" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586126069400" />
+    <state x="-764" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586149014275" />
     <state x="-662" y="263" key="#com.intellij.ide.util.MemberChooser" timestamp="1586072072370">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>

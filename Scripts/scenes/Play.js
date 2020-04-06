@@ -49,6 +49,7 @@ var scenes;
             var _this = this;
             this._road.Update();
             this._vaccine.Update();
+            this._bulletManager.Update();
             this._car.Update();
             managers.Collision.squaredRadiusCheck(this._car, this._vaccine);
             this._corona.forEach(function (corona) {
