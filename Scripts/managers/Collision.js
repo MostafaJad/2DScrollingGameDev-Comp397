@@ -10,12 +10,21 @@ var managers;
             if (objects.Vector2.sqrDistance(object1.position, object2.position) < (radii * radii)) {
                 if (!object2.isColliding) {
                     switch (object2.name) {
-                        case "car":
+                        case "vaccine":
                             {
                                 console.log("Collision with Vaccine");
-                                // let yaySound = createjs.Sound.play("yay");
-                                // yaySound.volume = 0.25;
-                                // config.Game.SCORE_BOARD.Score += 100;
+                                var yaySound = createjs.Sound.play("heartBeat");
+                                yaySound.volume = 0.30;
+                                config.Game.SCORE_BOARD.Score += 100;
+                                if (config.Game.SCORE_BOARD.Score == 500) {
+                                    config.Game.SCORE_BOARD.Lives += 1;
+                                }
+                                if (config.Game.SCORE_BOARD.Score == 1000) {
+                                    config.Game.SCORE_BOARD.Lives += 1;
+                                }
+                                if (config.Game.SCORE_BOARD.Score == 1500) {
+                                    config.Game.SCORE_BOARD.Lives += 1;
+                                }
                                 if (config.Game.SCORE > config.Game.HIGH_SCORE) {
                                     config.Game.HIGH_SCORE = config.Game.SCORE;
                                 }
@@ -24,9 +33,9 @@ var managers;
                         case "corona":
                             {
                                 console.log("Collision with Human");
-                                // let thunderSound = createjs.Sound.play("thunder");
-                                // thunderSound.volume = 0.25;
-                                // config.Game.SCORE_BOARD.Lives -= 1;
+                                var thunderSound = createjs.Sound.play("takeCare");
+                                thunderSound.volume = 0.30;
+                                config.Game.SCORE_BOARD.Lives -= 1;
                                 // check to see if all lives are lost and then go to End Scene
                                 if (config.Game.LIVES < 1) {
                                     config.Game.SCENE = scenes.State.END;

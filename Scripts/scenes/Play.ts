@@ -9,6 +9,8 @@ module scenes
 
         private _coronaNumber:number;
         private _corona?: objects.Corona[];
+        private _scoreBoard: managers.ScoreBoard;
+
         private _bulletManager: managers.Bullet;
         private _keyboardManager: managers.Keyboard;
 
@@ -34,6 +36,7 @@ module scenes
 
             this._road = new objects.Road();
            this._car = new objects.Car();
+           createjs.Sound.play("carEngine");
             this._vaccine = new objects.Vaccine();
 
             this._coronaNumber = config.Game.CORONA_NUM;
@@ -46,8 +49,8 @@ module scenes
 
             }
 
-            // this._scoreBoard = new managers.ScoreBoard();
-            // config.Game.SCORE_BOARD = this._scoreBoard;
+            this._scoreBoard = new managers.ScoreBoard();
+            config.Game.SCORE_BOARD = this._scoreBoard;
 
             this._bulletManager = new managers.Bullet();
             config.Game.BULLET_MANAGER = this._bulletManager;
@@ -63,10 +66,11 @@ module scenes
             this._road.Update();
 
             this._vaccine.Update();
+            this._car.Update();
             this._bulletManager.Update();
 
 
-            this._car.Update();
+
 
             managers.Collision.squaredRadiusCheck(this._car, this._vaccine);
 
@@ -89,9 +93,9 @@ module scenes
                 this.addChild(corona);
             });
 
-            // this.addChild(this._scoreBoard.LivesLabel);
-            //
-            // this.addChild(this._scoreBoard.ScoreLabel);
+            this.addChild(this._scoreBoard.LivesLabel);
+
+            this.addChild(this._scoreBoard.ScoreLabel);
         }
 
         public Clean():void

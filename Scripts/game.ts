@@ -17,11 +17,20 @@ let Game = (function() {
             {id: "restartButton", src: "./Assets/images/restartButton.png"},
             {id: "attack", src: "./Assets/images/attack1.png"},
             {id: "car", src: "./Assets/images/car.png"},
-            {id: "road", src: "./Assets/images/road.png"},
+            {id: "road", src: "./Assets/images/road.gif"},
             {id: "human", src: "./Assets/images/human.png"},
             {id: "corona", src: "./Assets/images/corona.png"},
             {id: "vaccine", src: "./Assets/images/vaccine.png"},
-            {id:"carEngine", src:"./Assets/sounds/carEngine.ogg"}
+            {id:"carEngine", src:"./Assets/sounds/carEngine.wav"},
+            {id:"engine", src:"./Assets/sounds/engine.wav"},
+            {id: "background", src:"./Assets/images/background.png"},
+            {id: "background", src:"./Assets/images/intro.jpg"},
+            {id:"heartBeat", src:"./Assets/sounds/heartBeat.wav"},
+            {id:"takeCare", src:"./Assets/sounds/takeCare.wav"},
+
+
+
+
 
 
 
@@ -30,8 +39,9 @@ let Game = (function() {
     function Preload(): void {
         assets = new createjs.LoadQueue();
         config.Game.ASSETS = assets;
-        assets.loadManifest(assetManifest);
         assets.installPlugin(createjs.Sound);
+        assets.loadManifest(assetManifest);
+
         assets.on("complete", Start);
 
     }
@@ -75,10 +85,10 @@ let Game = (function() {
                 console.log("switch to Play Scene");
                 currentScene = new scenes.Play();
                 break;
-            // case scenes.State.END:
-            //     console.log("switch to End Scene");
-            //     currentScene = new scenes.End();
-            //     break;
+            case scenes.State.END:
+                console.log("switch to End Scene");
+                currentScene = new scenes.End();
+                break;
 
 
         }

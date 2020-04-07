@@ -56,8 +56,8 @@ module objects
 
         Start(): void {
             this.name = "car";
-            this._verticalPosition = 430;
-            this._engineStart = createjs.Sound.play("carEngine");
+            this._verticalPosition = 630;
+            this._engineStart = createjs.Sound.play("engine");
             this._engineStart.volume = 0.25;
             this._horizontalSpeed = 5;
             this._engineStart.loop = -1;
@@ -69,6 +69,7 @@ module objects
         Update(): void {
             this._move();
             this._checkBounds();
+
 
             if(createjs.Ticker.getTicks() % 10 ==0)
             {

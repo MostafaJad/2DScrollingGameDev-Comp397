@@ -12,6 +12,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+///<reference path="../objects/Image.ts"/>
 var scenes;
 (function (scenes) {
     var Start = /** @class */ (function (_super) {
@@ -35,6 +36,7 @@ var scenes;
             this.addChild(this._road);
             this.addChild(this._welcomeLabel);
             this.addChild(this._welcomeLabel2);
+            this.addChild(this._pic);
             this.addChild(this._startButton);
             this._startButton.on("click", function () {
                 config.Game.SCENE = scenes.State.PLAY;

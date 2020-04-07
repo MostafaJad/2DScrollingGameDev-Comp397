@@ -8,7 +8,7 @@ body {
     border-radius: 10px;
 }
 
-#mainContent {
-    width: 1280px;
+#content {
+    width: 640px;
     margin: 0 auto;
 }
