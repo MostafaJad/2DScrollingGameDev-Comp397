@@ -27,7 +27,7 @@ module scenes
         public Start(): void
         {
             //instantiate a new Text object
-            this._gameOverLabel = new objects.Label("Game Over", "80px", "Consolas", "#FFFF00", 320, 180, true);
+            this._gameOverLabel = new objects.Label("Game Over", "80px", "Consolas", "#FF0000", 320, 180, true);
             // buttons
             this._restartButton = new objects.Button(config.Game.ASSETS.getResult("startButton"), 320, 430, true);
 
@@ -35,6 +35,7 @@ module scenes
 
             this._scoreBoard  = new managers.ScoreBoard();
             this._scoreBoard.HighScore = config.Game.HIGH_SCORE;
+            createjs.Sound.play("end");
             this.Main();
         }
 

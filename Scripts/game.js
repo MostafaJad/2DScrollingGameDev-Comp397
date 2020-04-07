@@ -12,6 +12,7 @@ var Game = (function () {
         { id: "startButton", src: "./Assets/images/startButton.png" },
         { id: "restartButton", src: "./Assets/images/restartButton.png" },
         { id: "attack", src: "./Assets/images/attack1.png" },
+        { id: "logo", src: "./Assets/images/Logo.png" },
         { id: "car", src: "./Assets/images/car.png" },
         { id: "road", src: "./Assets/images/road.gif" },
         { id: "human", src: "./Assets/images/human.png" },
@@ -23,6 +24,8 @@ var Game = (function () {
         { id: "background", src: "./Assets/images/intro.jpg" },
         { id: "heartBeat", src: "./Assets/sounds/heartBeat.wav" },
         { id: "takeCare", src: "./Assets/sounds/takeCare.wav" },
+        { id: "welcome", src: "./Assets/sounds/welcome.wav" },
+        { id: "end", src: "./Assets/sounds/end.wav" },
     ];
     function Preload() {
         assets = new createjs.LoadQueue();

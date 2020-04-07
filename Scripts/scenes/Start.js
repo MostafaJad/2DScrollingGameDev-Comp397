@@ -25,8 +25,11 @@ var scenes;
         Start.prototype.Start = function () {
             this._welcomeLabel = new objects.Label("COVID-19", "80px", "Consolas", "#FF0000", 320, 180, true);
             this._welcomeLabel2 = new objects.Label("Find The Cure", "50px", "Consolas", "#FF0000", 320, 270, true);
+            this._info = new objects.Label("User The Arrow To Control the Car And Space To Shot", "25px", "Consolas", "#FF0000", 320, 350, true);
             this._startButton = new objects.Button(config.Game.ASSETS.getResult("startButton"), 320, 430, true);
+            this._pic = new objects.Button(config.Game.ASSETS.getResult("logo"), 320, 600, true);
             this._road = new objects.Road();
+            createjs.Sound.play("welcome");
             this.Main();
         };
         Start.prototype.Update = function () {
@@ -37,6 +40,7 @@ var scenes;
             this.addChild(this._welcomeLabel);
             this.addChild(this._welcomeLabel2);
             this.addChild(this._pic);
+            this.addChild(this._info);
             this.addChild(this._startButton);
             this._startButton.on("click", function () {
                 config.Game.SCENE = scenes.State.PLAY;
